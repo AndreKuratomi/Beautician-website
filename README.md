@@ -1,3 +1,3 @@
-Link GitHub page:
+Link Vercel:
 
 https://beauticianwebsite.vercel.app/
