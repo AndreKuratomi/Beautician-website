@@ -1,3 +1,3 @@
 Link Vercel:
 
-https://beautician-website.vercel.app/
+https://beautician.vercel.app/index.html
