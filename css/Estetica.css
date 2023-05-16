@@ -158,13 +158,11 @@ footer {
   flex-direction: column;
   width: 100%;
 }
-.main-content {
-  color: white;
-  padding: 10px;
-}
 .sub-content {
+  color: white;
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 h2 {
   font-size: 30px;
@@ -174,6 +172,10 @@ h2 {
 p {
   margin-left: 5px;
   padding: 5px;
+}
+.address,
+#contato {
+  color: white;
 }
 .text {
   color: white;
