@@ -1,3 +1,7 @@
+Link website:
+
+https://alessandraschettini.com.br
+
 Link Vercel:
 
-https://beauticianwebsite.vercel.app/
+https://beautician.vercel.app/index.html
