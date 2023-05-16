@@ -83,92 +83,82 @@ nav {
 }
 
 /*CONTENT*/
-h1 {
-  color: #9c74a6;
-  font-size: 30px;
-  padding: 5px;
-}
-h2 {
-  color: #9c74a6;
-  font-size: 20px;
-  padding: 5px;
-}
-p {
-  color: #8a8080;
-  font-size: 15px;
-  padding: 5px;
-}
-.body {
-  box-sizing: border-box;
-  float: left;
-  margin: 70px 10px 0px;
-  padding: 10px;
-  width: 100%;
-}
-.face {
-  box-sizing: border-box;
-  float: left;
-  margin: 10px;
-  padding: 10px;
-  width: 100%;
-}
-.row {
-  box-sizing: border-box;
-  float: left;
-  margin: 10px;
-  padding: 10px;
-  width: 100%;
-}
-.left-column {
-  box-sizing: border-box;
-  float: left;
-  margin: 5px;
-  padding: 10px;
-  width: 45%;
-}
-.right-column {
-  box-sizing: border-box;
-  float: left;
-  margin: 5px;
-  padding: 10px;
-  width: 45%;
-}
 .texto {
   box-sizing: border-box;
+  color: #9c74a6;
+  font-size: 15px;
   float: left;
-  margin: 5px;
-  padding: 10px;
-  text-align: left;
-  width: 80%;
-}
-img {
-  float: right;
-  padding: 5px;
-  width: 15%;
+  padding: 100px 60px 60px;
+  width: 100%;
 }
 hr {
   border-top: white;
   width: 1%;
 }
+.container {
+  box-sizing: border-box;
+  padding: 10px 200px;
+  position: relative;
+  width: 100%;
+}
+.image {
+  border: 1px solid white;
+  margin: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 80%;
+  opacity: 0;
+  transition: 2s ease;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.overtext {
+  font-size: 15px;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  text-align: right;
+  transform: translate(-50%, -50%);
+}
+.overtext a {
+  background: white;
+  color: #9c74a6;
+  text-decoration: none;
+}
+.overtext a:hover {
+  background: white;
+  color: #9c74a6;
+  text-decoration: none;
+}
 
 /*FOOTER*/
 footer {
   background-color: #9c74a6;
-  box-sizing: border-box;
-  float: left;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .main-content {
   color: white;
   padding: 10px;
 }
-.left h2 {
+.sub-content {
+  display: flex;
+  justify-content: space-around;
+}
+h2 {
   font-size: 30px;
   margin-bottom: 10px;
   padding: 5px;
 }
-.left p {
-  color: white;
+p {
   margin-left: 5px;
   padding: 5px;
 }
@@ -185,14 +175,7 @@ span {
 }
 
 .left {
-  box-sizing: border-box;
-  float: left;
-  margin-left: 160px;
   padding: 5px;
-  width: 30%;
-}
-.left h2 {
-  color: white;
 }
 .content1 .social span {
   display: inline-block;
@@ -235,12 +218,7 @@ span {
 
 .right {
   border: black;
-  box-sizing: border-box;
-  float: left;
-  margin-left: 185px;
-  margin-right: 180px;
   padding: 5px;
-  width: 30%;
 }
 .email input {
   border: none;
@@ -340,62 +318,45 @@ a:hover {
   }
 
   /*Content Responsive*/
-  h1 {
-    margin-top: 30px;
-    text-align: center;
-  }
-  h2 {
-    text-align: left;
-  }
-  .body {
-    margin-top: 30px;
-  }
-  .row {
-    margin: -10px;
-  }
-  .left-column,
-  .right-column {
-    float: none;
-    width: 100%;
-  }
   .texto {
-    display: flex;
-    flex-direction: column;
+    font-size: medium;
+    margin-top: 30px;
+    padding: 50px;
+  }
+
+  .container {
+    /* margin-left: 20px; */
+    padding: 10px 10px 10px 0;
+  }
+  .image {
     align-items: center;
-    text-align: center;
     width: 100%;
   }
-  img {
-    /* margin-left: 90px; */
-    float: none;
+  .overlay {
+    background: white;
     width: 100%;
+  }
+  .overtext {
+    left: 50%;
+    text-align: center;
   }
 
   /*Footer Responsive*/
-  footer {
-    box-sizing: border-box;
-    float: none;
-    width: 100%;
+  .sub-content {
+    flex-direction: column;
   }
   h2,
-  .text,
-  .social,
-  .media {
+  .text {
     text-align: center;
-  }
-  .media {
-    margin-left: 15px;
   }
   .left,
   .right {
-    float: none;
     margin: 0;
     text-align: center;
     width: 100%;
   }
   .email,
   .msg {
-    float: none;
     margin: 0;
     padding: 0;
   }
